@@ -15,9 +15,6 @@ pip install xlrd==1.2.0
   - lua
   - js/ts
   - ~~protobuf(**TODO**)~~
-- Convert scripts
-  - c#
-  - ~~other(TODO)~~
 - Multi-process
 
 
