@@ -40,7 +40,6 @@ pip install xlrd==1.2.0
 | desc3 | attr5 | float        | 3.0    |
 | desc3 | attr6 | double       | 3.0    |
 | desc3 | attr7 | string       | abc    |
-| desc4 | attr8 | int[]        |1,2,3   |
 | desc4 | attr9 | int[]        |[1,2,3] |
 | desc4 | attr0 | int[][]      |[[1,2,3],[1,2,3]] |
 
