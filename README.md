@@ -23,16 +23,15 @@ pip install xlrd==1.2.0
 
 
 ### **Excel structure**
-**excel meta json**
-```json
-Meta1 = {"type":"object", "classname":"Test", "out_file":"Config"}
-Meta2 = {"type":"array", "classname":"Test", "out_file":"Config"}
-Meta3 = {"type":"dict<id,object>", "classname":"Test", "out_file":"Config"}
-Meta4 = {"type":"dict<id,array>", "classname":"Test", "out_file":"Config"}
-```
+
+**Cell(0,0)**
+- object
+- array
+- dict
+- group
 
 
-| Meta1 |       |              |        |
+| object|       |              |        |
 | ----- | ----- | ------------ | ------ |
 | desc1 | attr1 | int          | 1      |
 | desc2 | attr2 | bool         | 0      |
@@ -61,9 +60,8 @@ Meta4 = {"type":"dict<id,array>", "classname":"Test", "out_file":"Config"}
 ```
 
 
-| Meta2 |      |       |        |
+| array | desc | desc  | desc   |
 | ----- | ---- | ----- | ------ |
-| desc  | desc | desc  | desc   |
 | id    | att1 | att2  | att3   |
 | int   | bool | float | double |
 | 1     | false| 1.0   | 1.0    |
@@ -78,9 +76,9 @@ Meta4 = {"type":"dict<id,array>", "classname":"Test", "out_file":"Config"}
 ]
 ```
 
-| Meta3 |      |       |        |
+
+| dict  | desc | desc  | desc   |
 | ----- | ---- | ----- | ------ |
-| desc  | desc | desc  | desc   |
 | id    | att1 | att2  | att3   |
 | int   | bool | float | double |
 | 1     | false| 1.0   | 1.0    |
@@ -95,9 +93,8 @@ Meta4 = {"type":"dict<id,array>", "classname":"Test", "out_file":"Config"}
 }
 ```
 
-| Meta4 |      |       |        |
+| group | desc | desc  | desc   |
 | ----- | ---- | ----- | ------ |
-| desc  | desc | desc  | desc   |
 | id    | att1 | att2  | att3   |
 | int   | bool | float | double |
 | 1     | false| 1.0   | 1.0    |

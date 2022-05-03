@@ -1,14 +1,13 @@
-{
- "Consts": {
-  "filename": "Consts",
+[
+ {
+  "out_file": "Consts",
+  "out_field": "Conf",
+  "out_root": true,
+  "excel_file": "Consts",
   "table_name": "Conf",
   "table_type": "object",
-  "classname": "Conf",
-  "out_name": "",
-  "out_file": "Conf",
   "element_type": "Conf",
   "key_type": "",
-  "out_root": false,
   "fields": [
    {
     "order": 1,
@@ -80,16 +79,15 @@
    }
   ]
  },
- "Data1": {
-  "filename": "Data1",
+ {
+  "out_file": "Data1",
+  "out_field": "Item",
+  "out_root": false,
+  "excel_file": "Data1",
   "table_name": "Item",
   "table_type": "array",
-  "classname": "Test",
-  "out_name": "Item",
-  "out_file": "Data_1",
-  "element_type": "Test",
+  "element_type": "Item",
   "key_type": "",
-  "out_root": false,
   "fields": [
    {
     "order": 1,
@@ -369,16 +367,15 @@
    }
   ]
  },
- "Data2": {
-  "filename": "Data2",
-  "table_name": "Item2",
-  "table_type": "dict<id,object>",
-  "classname": "Data2",
-  "out_name": "Item2",
+ {
   "out_file": "Data2",
-  "element_type": "Data2",
-  "key_type": "int",
+  "out_field": "Item2",
   "out_root": false,
+  "excel_file": "Data2",
+  "table_name": "Item2",
+  "table_type": "dict",
+  "element_type": "Item2",
+  "key_type": "int",
   "fields": [
    {
     "order": 1,
@@ -655,31 +652,18 @@
     "key_type": "",
     "element_type": "",
     "elemnet_types": {}
-   },
-   {
-    "order": 24,
-    "fieldname": "Item2",
-    "fieldtype": "dict<int,Data2>",
-    "fieldvalue": null,
-    "is_value_type": false,
-    "is_array_type": false,
-    "is_dict_type": false,
-    "key_type": "int",
-    "element_type": "Data2",
-    "elemnet_types": {}
    }
   ]
  },
- "Data3": {
-  "filename": "Data3",
-  "table_name": "Item",
-  "table_type": "dict<id,array>",
-  "classname": "Data3",
-  "out_name": "Item",
+ {
   "out_file": "Data3",
-  "element_type": "Data3",
-  "key_type": "int",
+  "out_field": "Item",
   "out_root": false,
+  "excel_file": "Data3",
+  "table_name": "Item",
+  "table_type": "group",
+  "element_type": "Item",
+  "key_type": "int",
   "fields": [
    {
     "order": 1,
@@ -955,53 +939,8 @@
     "is_dict_type": false,
     "key_type": "",
     "element_type": "",
-    "elemnet_types": {}
-   },
-   {
-    "order": 24,
-    "fieldname": "Item",
-    "fieldtype": "dict<int,Data3>",
-    "fieldvalue": null,
-    "is_value_type": false,
-    "is_array_type": false,
-    "is_dict_type": false,
-    "key_type": "int",
-    "element_type": "Data3",
-    "elemnet_types": {}
-   }
-  ]
- },
- "Conf": {
-  "filename": "",
-  "table_name": "",
-  "table_type": "object",
-  "classname": "Conf",
-  "out_name": "",
-  "out_file": "Conf",
-  "out_root": true,
-  "fields": []
- },
- "Data_1": {
-  "filename": "",
-  "table_name": "",
-  "table_type": "object",
-  "classname": "Data_1",
-  "out_name": "",
-  "out_file": "Data_1",
-  "out_root": true,
-  "fields": [
-   {
-    "order": 1,
-    "fieldname": "Item",
-    "fieldtype": "Test[]",
-    "fieldvalue": null,
-    "is_value_type": false,
-    "is_array_type": true,
-    "is_dict_type": false,
-    "key_type": "",
-    "element_type": "Test",
     "elemnet_types": {}
    }
   ]
  }
-}
+]
