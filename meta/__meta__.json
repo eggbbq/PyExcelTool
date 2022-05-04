@@ -942,5 +942,65 @@
     "elemnet_types": {}
    }
   ]
+ },
+ {
+  "out_file": "Nest",
+  "out_field": "Sheet1",
+  "out_root": false,
+  "excel_file": "Nest",
+  "table_name": "Sheet1",
+  "table_type": "array",
+  "element_type": "Sheet1",
+  "key_type": "",
+  "fields": [
+   {
+    "order": 1,
+    "fieldname": "id",
+    "fieldtype": "int",
+    "fieldvalue": null,
+    "is_value_type": true,
+    "is_array_type": false,
+    "is_dict_type": false,
+    "key_type": "",
+    "element_type": "",
+    "elemnet_types": {}
+   },
+   {
+    "order": 2,
+    "fieldname": "a",
+    "fieldtype": "string",
+    "fieldvalue": null,
+    "is_value_type": true,
+    "is_array_type": false,
+    "is_dict_type": false,
+    "key_type": "",
+    "element_type": "",
+    "elemnet_types": {}
+   },
+   {
+    "order": 3,
+    "fieldname": "b",
+    "fieldtype": "NItem(id:int,name:string,age:int)",
+    "fieldvalue": null,
+    "is_value_type": false,
+    "is_array_type": false,
+    "is_dict_type": false,
+    "key_type": "",
+    "element_type": "",
+    "elemnet_types": {}
+   },
+   {
+    "order": 4,
+    "fieldname": "b2",
+    "fieldtype": "NItem(id:int,name:string,age:int)[]",
+    "fieldvalue": null,
+    "is_value_type": false,
+    "is_array_type": true,
+    "is_dict_type": false,
+    "key_type": "",
+    "element_type": "NItem(id:int,name:string,age:int)",
+    "elemnet_types": {}
+   }
+  ]
  }
 ]

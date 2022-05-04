@@ -7,10 +7,12 @@ from multiprocessing import Pool
 
 
 def is_array_t(text):
-    return re.match("(int|int16|int32|bool|float|double|string)[\[\]]+$", text)
+    # return re.match("(int|int16|int32|bool|float|double|string)[\[\]]+$", text)
+    return text.endswith("[]")
 
 def is_dict_t(text):
-    return re.match("dict<(int|int16|int32|bool|float|double|string),[a-zA-Z0-1]+>$", text)
+    # return re.match("dict<(int|int16|int32|bool|float|double|string),[a-zA-Z0-1]+>$", text)
+    return re.match("dict<(int|int16|int32|bool|float|double|string),", text)
 
 def is_value_t(text):
     return re.match("(int|int16|int32|bool|float|double|string)$", text)
